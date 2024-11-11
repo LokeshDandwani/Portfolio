@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokesh Dandwani</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- *************************Navbar************************* -->
+    <header class="header">
+      <a href="#" class="logo"></a>
+      <i class="bx bx-menu" id="menu" style="color: #ffffff"></i>
+      <nav class="navbar">
+        <a href="#home" style="--vlr: 1" class="active">Home</a>
+        <a href="#about" style="--vlr: 2">About Me</a>
+        <a href="#education" style="--vlr: 3">Education</a>
+        <a href="#skills" style="--vlr: 4">Skills</a>
+        <a href="#contact" style="--vlr: 5">Contact Me</a>
+      </nav>
+    </header>
+    <!-- *************************Home Section************************* -->
+    <section class="home" id="home">
+      <div class="text-content">
+        <h1>I'm Lokesh Dandwani</h1>
+        <div class="text-animation">
+          <h2>Frontend Developer</h2>
+        </div>
+        <p>
+          👋 Hi, I'm Lokesh Dandwani, a passionate front-end developer! I craft
+          sleek, responsive websites using HTML, CSS, and JavaScript. I love
+          turning ideas into beautiful, interactive web experiences that are
+          both functional and visually appealing. Dive into my projects to see
+          what I’ve been building lately!.
+        </p>
+        <div class="btn-section">
+          <button
+          onclick="window.open('https://www.linkedin.com/in/lokesh-dandwani-25b2a0243', '_blank');" class="btn"
+            class="btn"
+          >
+            Hire me
+          </button>
+          <button onclick="window.location.href='#contact'" class="btn">
+            Let's Talk
+          </button>
+        </div>
+        <div class="social-media">
+          <a href="https://twitter.com/dandwanil" target="_blank">
+            <i class="bx bxl-twitter" style="--vlr: 7"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lokesh-dandwani-25b2a0243"
+            target="_blank"
+          >
+            <i class="bx bxl-linkedin" style="--vlr: 8"></i>
+          </a>
+          <a href="https://github.com/LokeshDandwani" target="_blank">
+            <i class="bx bxl-github" style="--vlr: 9"></i>
+          </a>
+        </div>
+      </div>
+      <img src="MyPhoto2.png" alt="" />
+    </section>
+    <!-- *************************About Section************************* -->
+    <section class="about" id="about">
+      <h2 class="title">About <span>Me</span></h2>
+      <img src="MyPhoto2.png" alt="" class="aboutImg" />
+      <div class="text-content2">
+        <h2>Frontend Developer</h2>
+        <p>
+          Hey there! 👋 I'm Lokesh Dandwani, a front-end developer with a knack
+          for creating clean, user-friendly web interfaces. My journey into the
+          world of web development began with a curiosity for how websites work
+          behind the scenes, and ever since, I've been hooked on bringing ideas
+          to life on the web. With a solid foundation in HTML, CSS, and
+          JavaScript, I specialize in crafting responsive, interactive websites
+          that look great on any device.
+        </p>
+
+        <div id="extraContent">
+          <p>
+            I thrive on solving complex problems and continuously learning new
+            techniques to enhance my skills. Whether it's building sleek landing
+            pages or transforming designs into functional web applications, I
+            love the entire creative process. When I’m not coding, you can find
+            me exploring new technologies,photography, playing badminton. Let’s
+            connect and build something amazing together!
+          </p>
+        </div>
+
+        <button onclick="toggleContent()" id="readMoreBtn" class="btn">
+          Read More
+        </button>
+      </div>
+    </section>
+    <!-- *************************Education Section************************* -->
+    <section class="education" id="education">
+      <h2 class="title">My <span>Education</span></h2>
+      <div class="row">
+        <div class="column">
+          <h2>Education</h2>
+          <div class="box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">2021-25<i class="bx bxs-calendar"></i></div>
+                <h3>LNM Institue of Information Technology</h3>
+                <p>
+                    <i class="bx bx-map-pin t"></i> Jaipur<br>
+                  B.Tech-CSE <br>
+                  CGPA= 6.37/10
+                </p>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <div class="year">2019-21 <i class="bx bxs-calendar"></i></div>
+                <h3>The Turning Point Public School</h3>
+                <p>
+                    <i class="bx bx-map-pin t"></i>Ajmer<br>
+                  CBSE 12<sup>th</sup> Percentage=86.80%
+                </p>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <div class="year">2017-19 <i class="bx bxs-calendar"></i></div>
+                <h3>St. Stephens Sr. Sec. School Ajmer</h3>
+                <p>
+                    <i class="bx bx-map-pin t"></i>Ajmer<br>
+                    CBSE 10<sup>th</sup> Percentage=74.80%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    <!-- *************************Skills Section************************* -->
+    <section class="skills" id="skills">
+      <h2 class="title">My <span>Skills</span></h2>
+      <div class="wrapper">
+        <div class="skill-content">
+          <h3 class="skill-title">Web Development</h3>
+          <div class="skill-box skill-box1">
+            <div class="single-skill">
+              <span class="topic">HTML</span>
+              <span class="topic">90%</span>
+            </div>
+            <div class="bar-side">
+              <div class="bar bar-1"></div>
+            </div>
+            <div class="single-skill">
+              <span class="topic">CSS</span>
+              <span class="topic">80%</span>
+            </div>
+            <div class="bar-side">
+              <div class="bar bar-2"></div>
+            </div>
+            <div class="single-skill">
+              <span class="topic">JavaScript</span>
+              <span class="topic">70%</span>
+            </div>
+            <div class="bar-side">
+              <div class="bar bar-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-content">
+          <h3 class="skill-title">Data Structures and Fundamentals</h3>
+          <div class="skill-box skill-box2">
+            <div class="single-skill">
+              <span class="topic">CPP</span>
+              <span class="topic">90%</span>
+            </div>
+            <div class="bar-side">
+              <div class="bar bar-1"></div>
+            </div>
+            <div class="single-skill">
+              <span class="topic">DBMS</span>
+              <span class="topic">80%</span>
+            </div>
+            <div class="bar-side">
+              <div class="bar bar-2"></div>
+            </div>
+            <div class="single-skill">
+              <span class="topic">OS</span>
+              <span class="topic">70%</span>
+            </div>
+            <div class="bar-side">
+              <div class="bar bar-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *************************Contact Section************************* -->
+    <section class="contact" id="contact">
+      <h2 class="title">Contact<span>Me</span></h2>
+      <form action="#" id="">
+        <div class="input-box">
+          <input type="text" required placeholder="Full Name" />
+          <input type="email" required placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="tel" required placeholder="Mobile Number" />
+          <input type="email" required placeholder="Subject For" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <footer>
+      <div class="text">
+        <p>Copyright @ 2024 Lokesh Dandwani</p>
+      </div>
+      <a href="#"> <i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
