@@ -120,6 +120,7 @@ section{
     -webkit-text-stroke: .7px #ff00ee;
     background: linear-gradient(#ff00ee,#ff00ee);
     background-repeat: no-repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     background-position: -33rem 0;
     transform: translateY(-100px);
@@ -265,6 +266,7 @@ section{
     opacity: 0;
 
 }
+
 @keyframes Bottom{
     0%{
         transform: translateY(100px);
@@ -680,6 +682,15 @@ footer i{
     border-radius: 50%;
     font-size: 2.4rem;
 }
+#extraContent {
+    display: none;
+}
+.t{
+    
+        font-size: 20px;
+        color: #ff0000;  /* Red color */
+    
+}
 /* RESPONSIVE */
 @media(max-width:1200px){
     html{
@@ -753,13 +764,4 @@ footer i{
     .input-box input{
         width: 100%;
     }
-}
-#extraContent {
-    display: none;
-}
-.t{
-    
-        font-size: 20px;
-        color: #ff0000;  /* Red color */
-    
 }
